@@ -1,0 +1,16 @@
+DOCKER 
+
+#cria container postgres
+    docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+
+#exibe logs de erros do container
+    docker logs database
+
+#mostra containers que estão rodando na minha máquina
+    docker ps 
+
+SEQUELIZE
+
+#instala sequelize
+    yarn add sequelize
+    yarn add sequelize-cli
