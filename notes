@@ -1,4 +1,4 @@
-DOCKER 
+- DOCKER 
 
 #cria container postgres
     docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
@@ -9,8 +9,22 @@ DOCKER
 #mostra containers que estão rodando na minha máquina
     docker ps 
 
-SEQUELIZE
+- SEQUELIZE
 
 #instala sequelize
     yarn add sequelize
     yarn add sequelize-cli
+    yarn sequelize db:migrate
+
+- BCRYPTJS para encriptogra strings
+    yarn add bcryptjs
+
+- JWT
+
+    yarn add jsonwebtoken
+    Utilizado para autenticação em API'S REST 
+    Composto por três camadas sendo elas:
+        Headers (Tipo de token, algoritmo)
+        Payload (Dados adicionais)
+        Assinatura 
+        
