@@ -15,7 +15,7 @@
     yarn add sequelize
     yarn add sequelize-cli
     yarn sequelize db:migrate
-    yarn sequelize migration:create --name=create-files
+    yarn sequelize migration:create --name=create-appointments
 
 
 - BCRYPTJS para encriptogra strings
