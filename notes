@@ -29,4 +29,8 @@
         Headers (Tipo de token, algoritmo)
         Payload (Dados adicionais)
         Assinatura 
+
+- MANIPULATE DATES 
+
+    lib date-fns
         
