@@ -27,7 +27,7 @@ routes.put("/users", UserController.update);
 routes.post('/files', upload.single('file'), FileController.store);
 routes.get("/provider", ProviderController.index);
 routes.get("/notifications", NotificationController.index);
-routes.put("/notifications:id", NotificationController.update);
+routes.put("/notifications/:id", NotificationController.update);
 
 
 export default routes;
