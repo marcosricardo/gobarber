@@ -39,3 +39,12 @@
     docker run --name mongobarber -p 27017:27017 -d -t mongo
 
     yarn add mongoose - orm para mongodb
+
+- CRIA IMAGEM DO REDIS
+
+    docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
+
+- BEE QUEUE - trabalhos em background com REDIS
+
+    https://github.com/bee-queue/bee-queue
+    yarn add bee-queue
