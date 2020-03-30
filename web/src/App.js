@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {  useState, useEffect } from 'react';
 
 function App() {
+  const [tech, setTech] = useState(['ReactJS', 'Node.js']);
+
   return (
-    <div className="App"><header className="App-header"></header></div>
+    <ul>
+        {
+            tech.map(t => (
+             <li key={t}>{t}</li>
+            ))
+        }
+    </ul>
   );
 }
 
