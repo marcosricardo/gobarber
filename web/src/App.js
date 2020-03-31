@@ -1,11 +1,11 @@
-import React, {  useState, useEffect } from 'react';
+import React from 'react';
 import Routes from './routes';
 import history from './services/history';
 import { Router } from 'react-router-dom';
+import './config/ReactotronConfig'
 
 function App() {
-  return
-      (
+  return (
         <Router history={history}>
             <Routes />
         </Router>
