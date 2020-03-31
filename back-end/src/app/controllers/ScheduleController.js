@@ -27,11 +27,6 @@ class ScheduleController {
 
         const { date } = req.query;
         const parsedDate = parseISO(date);
-        
-        console.log(parsedDate);
-        console.log("startOfDay " + startOfDay(parsedDate));
-        console.log("endOfDay " + endOfDay(parsedDate));
-        console.log("ProviderId " + req.userId);
 
         const appointments = await Appointment.findAll({
             where:{
@@ -39,8 +34,15 @@ class ScheduleController {
                 canceled_at: null,
                 date : {
                     [Op.between]: [startOfDay(parsedDate), endOfDay(parsedDate)]
-                }
+                },
             },
+            includes:[
+                {
+                    model: User,
+                    as: 'user',
+                    attributes: ['name']
+                }
+            ],
             order:['date']
         });
 
