@@ -1,0 +1,7 @@
+- REDUX
+
+criar pasta store dentro de src
+
+instalar
+
+yarn add redux redux-saga react-redux reactotron-redux reactotron-redux-saga immer
